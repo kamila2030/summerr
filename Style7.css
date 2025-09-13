@@ -1,0 +1,12 @@
+.color-change {
+    font-size: 2em;
+    animation: colorAnimation 5s linear infinite; /* Запуск анимации */
+  }
+  
+  @keyframes colorAnimation {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: yellow; }
+    100% { color: red; }
+  }

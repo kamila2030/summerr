@@ -1,0 +1,108 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1; /* Нежно-розовый фон */
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #d87093; /* Темно-розовый цвет ссылок */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #c71585; /* Насыщенный розовый при наведении */
+}
+
+/* Стили для хедера */
+.site-header {
+    background-color: #fff0f5; /* Бледно-розовый фон хедера */
+    color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #c71585; /* Насыщенный розовый заголовок */
+}
+
+/* Стили для навигации */
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.site-nav li {
+    margin: 0 1.5rem;
+}
+
+.site-nav a {
+    color: #800080; /* Фиолетовый цвет ссылок навигации */
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.site-nav a:hover {
+    background-color: #ff69b4; /* Ярко-розовый фон при наведении */
+    color: #fff;
+}
+
+/* Стили для основного контента */
+.site-main {
+    padding: 2rem;
+}
+
+.section {
+    background-color: #fff0f5; /* Бледно-розовый фон секции */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ff69b4; /* Ярко-розовый заголовок секции */
+    border-bottom: 2px solid #f08080; /* Светло-красная линия под заголовком */
+    padding-bottom: 0.5rem;
+}
+
+/* Стили для футера */
+.site-footer {
+    background-color: #d87093; /* Темно-розовый фон футера */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    .site-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-nav li {
+        margin: 0.5rem 0;
+    }
+
+    .site-title {
+        font-size: 2rem;
+    }
+}

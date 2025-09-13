@@ -1,0 +1,47 @@
+/* Общие стили для контейнера */
+.cat-container {
+    position: relative; /* Важно! */
+    width: 200px; /* Ширина кота */
+    height: 200px; /* Высота кота */
+  }
+  
+  /* Стили для кота */
+  .cat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1; /* Чтобы кот был над хвостом */
+  }
+  
+  /* Стили для хвоста */
+  .tail {
+    position: absolute;
+    bottom: 20px; /* Расположение хвоста по вертикали */
+    left: 60%; /* Расположение хвоста по горизонтали (относительно кота) */
+    width: 30%; /* Ширина хвоста */
+    height: auto;
+    transform-origin: top center; /* Точка вращения хвоста */
+    animation: wagTail 2s linear infinite; /* Анимация */
+  }
+  
+  .tail-image {
+    width: 220%;
+    height: auto;
+    display: block; /* Убирает лишний отступ под изображением */
+  }
+  
+  
+  /* Анимация виляния хвостом */
+  @keyframes wagTail {
+    0% {
+      transform: rotate(-20deg);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(-20deg);
+    }
+  }
